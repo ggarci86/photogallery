@@ -1,0 +1,306 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   /* margin: 0; */ /* caused display issues in the media player */
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* end */
+
+/* start of HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* end of HTML5 display-role reset for older browsers */
+
+/* start of mobile first */
+html {
+  background-color: #000000;
+}
+
+body {
+  margin: 0 auto;
+  width: 485px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+}
+
+h1 {
+  color:#007d7b;
+  font-size: 32px;
+  background-color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  width: 485px;
+  margin: 0 auto;
+}
+/* start of navigation */
+nav {
+  padding-bottom:10px;
+}
+
+nav h2 {
+  visibility:hidden;
+  height:1px;
+}
+
+nav li {
+  display:inline-flex;
+}
+
+nav a {
+  padding:15px;
+  font-size: 24px;
+  text-decoration:none;
+  color: #ffffff;
+  text-transform:uppercase;
+  text-align:center;
+}
+
+nav a:hover {
+  color: #007d7b;
+}
+
+[href="#top"] {
+  color: #007d7b;
+  position:fixed;
+  bottom:0px;
+  right:0px;
+}
+
+[href="#top"]:hover {
+  color: #000000;
+}
+/* end of navigation */
+
+h2{
+  text-align: center;
+  font-size: 1.5em;
+}
+
+/* start of container */
+.container {
+  background-color: #ffffff;
+  color: #000000; 
+  width: 100%;
+}
+/* end of container */
+
+.container h2 {
+  color: #000000;
+}
+
+.container p {
+  color: #000000;
+  text-align: left;
+}
+
+p {
+  font-size: 20px;
+  color: #000000;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+figcaption, label, input, small {
+  font-size: 16px;
+}  
+
+/* start of gallery */
+img {
+ width: 100%;
+ margin-bottom: 1.5rem;
+ position: relative;
+ text-align: center;
+}
+
+.gallery {
+  column-count: 1;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+figcaption {
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* end of gallery */
+
+/* start of contact info */
+.info {
+  text-align: center;
+  color: #ffffff;
+  padding: 0;
+}
+/* end of contact info */
+
+/* start of form */
+label {
+  text-transform: uppercase;
+  margin-left: 20px;
+  line-height: 40px;
+}
+
+/* start of input */
+.input {
+  background-color: #ffffff;
+  padding: 0.5rem;
+	margin: 0 auto;
+  display:block;
+  width: 455px;  
+  border: 1px;
+  border-radius: 5px;
+}
+
+input::placeholder {
+  color: #007d7b;
+  text-transform: uppercase;
+  padding: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  margin-top:1.5em;
+}
+/* end of input */
+
+/* start of button */
+.button {
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    width: 50%;
+    background-color: #007d7b;
+    border: 1px;
+    border-radius: 20px;
+    padding: 8px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-top:1.5em;
+}
+/* end of button */
+
+/* end of form */
+
+/* start of footer */
+p, small {
+  color: #ffffff;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+/* end of footer */
+/* end of mobile first */
+
+/* start of screen styling (medium: 880px) */
+@media screen and (min-width: 880px) {
+  body {
+    width: 880px;
+  }
+
+  h1 {
+    text-align: left;
+    width: 880px;
+    margin: 0 auto;
+  }
+
+  nav {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex; 
+}
+  nav ul {
+    justify-content: center;
+}
+  .gallery {
+    line-height: 0;
+    column-count: 2;
+    overflow: hidden;
+  }
+
+  label {
+    margin-left: 35px;
+  }
+
+  .input {
+    width: 800px; 
+  }
+}
+/* end of screen styling (medium: 880px) */
+
+/* start of screen styling (large: 1300px) */
+@media screen and (min-width: 1300px) {
+  body {
+    width: 1300px;
+  }
+
+  h1 {
+    text-align: left;
+    width: 1300px;
+    margin: 0 auto;
+  }
+
+  nav {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: right;
+  }
+
+  .gallery {
+    line-height: 0;
+    column-count: 3;
+  }
+
+  label {
+    margin-left: 45px;
+  }
+
+  .input {
+    width: 1200px; 
+  }
+}
+/* end of screen styling (large: 1300px) */
