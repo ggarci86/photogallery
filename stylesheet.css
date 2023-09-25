@@ -1,0 +1,217 @@
+html {
+  background-color: #000000;
+}
+body {
+  margin: 0 auto;
+  width: 485px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+}
+/* get h1 text to span entirety of page */
+h1 {
+  color:#007d7b;
+  font-size: 32px;
+  background-color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  width: 485px;
+  margin: 0 auto;
+}
+nav {
+  padding-bottom:10px;
+}
+nav h2 {
+  visibility:hidden;
+  height:1px;
+}
+nav li {
+  display:inline-flex;
+}
+nav a {
+  padding:15px;
+  font-size: 24px;
+  text-decoration:none;
+  color: #ffffff;
+  text-transform:uppercase;
+  text-align:center;
+}
+nav a:hover {
+  color: #007d7b;
+}
+[href="#top"] {
+  color: #007d7b;
+  position:fixed;
+  bottom:0px;
+  right:0px;
+}
+[href="#top"]:hover {
+  color: #000000;
+}
+h2{
+  text-align: center;
+}
+.container {
+  background-color: #ffffff;
+  color: #000000; 
+  width: 100%;
+}
+.container h2 {
+  color: #000000;
+}
+.container p {
+  color: #000000;
+  text-align: left;
+}
+p {
+  font-size: 20px;
+  color: #000000;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+figcaption, label, input, small {
+  font-size: 16px;
+}
+/* start of gallery styling */
+figure {
+ display: table;
+}
+img {
+ width: 100%;
+ margin-bottom: 0.5rem;
+ display: block;
+}
+figcaption {
+  display: table-caption;
+  caption-side: bottom;
+
+}
+.gallery {
+  column-count: 1;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+/* end of gallery styling */
+/* start of contact info */
+.info {
+  text-align: center;
+  color: #ffffff;
+}
+/* end of contact info */
+/* start of form */
+label {
+  margin-left: 10px;
+}
+/* start of input styling */
+.input {
+  background-color: #ffffff;
+  padding: 0.5rem;
+	margin: 0 auto;
+  display:block;
+  width: 455px;  
+  border: 1px;
+  border-radius: 5px;
+}
+input::placeholder {
+  color: #007d7b;
+  text-transform: uppercase;
+  padding: 5px 20px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  margin-top:1.5em;
+}
+/* end of input styling */
+/* start of button styling */
+.button {
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    width: 50%;
+    background-color: #007d7b;
+    border: 1px;
+    border-radius: 20px;
+    padding: 5px 20px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-top:1.5em;
+}
+/* end of button styling */
+/* end of form */
+
+/* start of footer styling */
+p, small {
+  color: #ffffff;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+/* end of button styling */
+
+/* start of screen styling (medium: 880px) */
+@media screen and (min-width: 880px) {
+  body {
+    width: 880px;
+  }
+  h1 {
+  text-align: left;
+  width: 880px;
+  margin: 0 auto;
+  }
+  nav {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex; 
+}
+nav ul {
+ justify-content: center;
+}
+  .gallery{
+    line-height: 0;
+    column-count: 2;
+    overflow: hidden;
+  }
+  label {
+    margin-left: 35px;
+  }
+  .input {
+    width: 800px; 
+  }
+}
+/* end of screen styling (medium: 880px) */
+
+/* start of screen styling (large: 1300px) */
+@media screen and (min-width: 1300px) {
+  body {
+    width: 1300px;
+  }
+  h1 {
+  text-align: left;
+  width: 1300px;
+  margin: 0 auto;
+  }
+  nav {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+    justify-content: right;
+}
+  .gallery {
+    line-height: 0;
+    column-count: 3;
+  }
+  label {
+    margin-left: 45px;
+  }
+  .input {
+    width: 1200px; 
+  }
+}
+/* end of screen styling (large: 1300px) */
+
+/* figure out captions */
+/* adjust label spacing between inputs*/
+/* add in the top info from past assignment */
